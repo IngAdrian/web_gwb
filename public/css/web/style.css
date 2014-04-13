@@ -1,0 +1,265 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html{
+	height: 100%;
+}
+
+ul>li>a{
+	/*color: #ABD047;*/
+	color: #8A9F23;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+body{
+	background: url('../../img/background.jpg') repeat scroll 0% 0% transparent;
+	font-weight: 400;
+	font-family: 'Open Sans',sans-serif;
+}
+
+header{
+	width: 98%;
+	margin: auto;
+}
+
+
+header, nav#menu,#menu h1, #menu #nav, #menu li{
+	height: 63px;
+}
+
+/*===============MENU==============*/
+/*nav#menu>h1, #menu #nav, #menu li{
+	display: inline-block;
+}
+
+#menu #nav{
+	float: right;
+}
+
+#menu li{
+	margin-left: 20px;
+}
+
+#menu li:hover, #menu li.active{
+	border-bottom: 3px solid #ABD047;
+}
+
+nav#menu{
+		line-height: 70px;
+		border-bottom: 3px solid #E6E6E6;
+}*/
+
+/*nav#menu>h1, #menu #nav, #menu li{
+		display: block;
+	}*/
+#menu #nav{
+	float: right;
+}
+
+
+nav#menu{
+	line-height: 70px;
+	border-bottom: 3px solid #E6E6E6;
+}
+
+#menu #nav{
+	width: 100%;
+	text-align: center;
+	height: 280px;
+	display: none;
+}
+
+#menu li{
+	/*border-bottom: 3px solid #ABD047;*/
+	border-bottom: 3px solid #8A9F23;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+	list-style: none;
+}
+
+#menu li.active, #menu li:hover{
+	/*background-color: #ABD047;*/
+	background-color: #8A9F23;
+}
+
+#menu li.active a, #menu li:hover a{
+	color: #fff;
+}
+	
+#click{
+	float: right;
+	height: 36px;
+	width: 36px;
+	background-image: url('../../img/menu.png');
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	margin-right: 5px;
+	cursor:pointer;
+	border: 2px solid #E6E6E6;
+	border-radius: 5px;
+}
+
+#menu h1{
+	text-align: left;
+}
+
+/*=============================================*/
+
+
+
+/**********social****************/
+#social ul{
+	padding-top: 5px;
+	text-align: center;
+}
+
+#social li a{
+	display: block;
+	height: 33px;
+	width: 33px;
+	background-image: url('../../img/social.png');
+}
+
+#social li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.fb, .tw, .yt, .in{}
+.fb:hover, .tw:hover, .yt:hover, .in:hover{
+	transition: background: 2s ease;
+	/*opacity: .7;*/
+}
+	
+.fb{ background-position:0 0px;}
+.tw{ background-position:-40px 0;}
+.yt{ background-position:-79px 0;}
+.in{ background-position:-120px 0;}
+	
+.fb:hover{ background-position:0 -33px;}
+.tw:hover{ background-position:-40px -33px;}
+.yt:hover{ background-position:-79px -33px;}
+.in:hover{ background-position:-120px -33px;}
+
+/* ===================Slider===================== */
+.adaptar{
+	width: 100%;
+}
+/* ============================================== */
+
+/*****************square**************************/
+.table{
+	display: table;
+}	
+.square, .colum{
+	width: 20%;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100px;
+	/*background-color: #ABD047;*/
+	background-color: #8A9F23;
+	padding: 10px;
+}
+
+.colum{
+	max-height: 100%;
+	bottom: 0px;
+}
+
+.square:hover, .colum:hover{
+	color: #ABD047;
+	background-color: #F4F4F4;
+	border: 2px solid #E4E4E4;
+}
+
+.square h2{	
+	padding: 0px;
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+/*************************************************/
+
+
+/*========Colum Right========*/
+#right{
+	margin-top: 10px;
+}
+.comit{
+	display: none;
+}
+/*============================*/
+
+/*========Abajo========*/
+#abajo{
+	margin-top: 10px;
+}
+/*============================*/
+
+/*========FOOTER========*/
+#footer h1{
+	color:#929292;
+}
+
+#footer a{
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+}
+
+#footer a:hover{
+	color: #000;
+}
+
+#mapa{
+	border-left: 1px solid #ccc;
+}
+
+#mapa li{
+	list-style: none;
+}
+.address{
+	font-size: 14px;
+	/*color: #114E8F;*/
+	padding: 10px;
+	border-top: 1px solid #CCC;
+	margin: 15px 0px;
+	text-align: right;
+}
+/*============================*/
+
+/*=======Cuadrados Pequeños=========*/
+.square-min{
+	height: 100px;
+	border: 1px solid #E6E6E6;
+	border-radius: .5em;
+}
+
+.squares{
+	padding-top: 10px;
+}
+.stm{
+	height: 100%;
+	background-image: url('../../img/programas/stm-trans.png');
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: 12px 15px;
+}
+
+.e7{
+	height: 100%;
+	background-image: url('../../img/programas/7-trans.png');
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 15px 7px;
+}
+
+/*==================================*/

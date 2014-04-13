@@ -1,0 +1,11 @@
+/*navbar-fixed-top*/
+body {
+  padding: 70px 0 0;
+  margin:0;
+  font-family:'Helvetica Neue',Arial;font-size:14px}
+section.container{ min-height: 550px;}
+.login{position:absolute;top:50%;left:50%;width:290px;margin-top:-103px;margin-left:-145px;}
+.login h1{font-size:1.3em}
+.login .form .input-group{margin-bottom:10px}
+footer{text-align:center}
+.right{float: right; text-align: right;}

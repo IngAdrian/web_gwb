@@ -1,0 +1,174 @@
+.center{text-align: center;}
+
+.left{
+	padding-left: 4px;
+	text-align: left;
+	height: 125px;
+}
+
+.item{
+		display: inline-block;
+		overflow: hidden;
+		width: 160px;
+		height: 330px;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 5px #ccc;
+		margin: 0.5em;
+		border-radius: 0.5em;
+		background-color: #fff; 
+	}
+	.image{
+		width: 150px;
+		height: 150px;
+	}
+
+	#btn{
+		margin-bottom: 0px;
+	}
+
+
+
+
+
+
+
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 14px/1.4 Georgia, Serif; 
+}
+
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse;
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+
+	td, th {
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+
+th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+		text-align: center;
+	}
+
+	@media not all and (max-width: 760px) {
+  td.center{
+  	text-align: center;
+  	padding:0px;
+  }
+
+  td{
+			padding-left: .5em;
+  }
+}
+
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+			font-size: 18px;
+		}
+
+		h1{font-size: 25px;text-align: center; font-weight: bold;}
+
+		a.btn{position: relative; z-index: 1px;}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			/*border: none;*/
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 35%; 
+		}
+		
+		td.user:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0px;
+			left: 5px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+			font-weight: bold;
+		}
+		
+		/*
+		Label the data
+		*/
+		td.user:nth-of-type(1):before { content: "Nombres: "; }
+		td.user:nth-of-type(2):before { content: "Apellidos: "; }
+		td.user:nth-of-type(3):before { content: "E-mail: "; }
+		td.user:nth-of-type(4):before { content: "Teléfono: "; }
+		td.user:nth-of-type(5):before { content: "Acciones: "; }
+	}
+
+
+
+	td.uni:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0px;
+			left: 3px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+			font-weight: bold;
+
+		}
+		/*
+		Label the data
+		*/
+		td.uni:nth-of-type(1):before { content: "Universidad: "; }
+		td.uni:nth-of-type(2):before { content: "Dirección: "; }
+		td.uni:nth-of-type(3):before { content: "Teléfono: "; }
+		td.uni:nth-of-type(4):before { content: "País: "; }
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }	
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	

@@ -1,0 +1,267 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	#menu h1{
+		font-size:35px;
+	}
+	nav#menu>h1, #menu #nav, #menu li{
+		display: inline-block;
+	}
+	#menu #nav{
+		width: auto;
+		height: auto;
+	}
+	#menu li{
+		border-bottom: none;
+		margin-left: 20px;
+	}
+	#menu li.active{
+		background-color: transparent;
+		/*border-bottom: 3px solid #ABD047;*/
+		border-bottom: 3px solid #8A9F23;
+	}
+	#menu li.active a{
+		/*color: #ABD047;*/
+		color: #8A9F23;
+	}
+	#menu li:hover{
+		background-color: transparent;
+		/*border-bottom: 3px solid #ABD047;*/
+		border-bottom: 3px solid #8A9F23;
+	}
+	#menu li:hover a{
+		/*color: #ABD047;*/
+		color: #8A9F23;
+	}
+	#click{
+		display: none;
+	}
+	#social{
+		margin-top: 5px;
+	}
+	#social ul{
+		padding-top: 5px;
+		text-align: right;
+	}
+	.square{
+		height: 190px;
+	}
+	.square h2, .colum h2{
+		font-weight: 300;
+		font-size: 31px;
+		line-height: 30px;
+	}
+
+	.square h2#abre, .colum h2#abre{
+		font-weight: 300;
+		font-size: 55px;
+		line-height: 70px;
+		text-align: center
+	}
+
+	#right{
+		margin-top: 0px;
+	}
+	.colum{
+		height: 488px;
+	}
+	.comit{
+		display: inherit;
+	}
+	.squares{
+		padding-top: 0px;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#menu h1{
+		font-size:35px;
+	}
+		
+	nav#menu>h1, #menu #nav, #menu li{
+		display: inline-block;
+	}
+	#menu #nav{
+		width: auto;
+		height: auto;
+	}
+	#menu li{
+		border-bottom: none;
+		margin-left: 20px;
+	}
+	#menu li.active{
+		background-color: transparent;
+		/*border-bottom: 3px solid #ABD047;*/
+		border-bottom: 3px solid #8A9F23;
+	}
+	#menu li.active a{
+		/*color: #ABD047;*/
+		color: #8A9F23;
+	}
+	#menu li:hover{
+		background-color: transparent;
+		/*border-bottom: 3px solid #ABD047;*/
+		border-bottom: 3px solid #8A9F23;
+	}
+	#menu li:hover a{
+		/*color: #ABD047;*/
+		color: #8A9F23;
+	}
+	#click{
+		display: none;
+	}
+	#social{
+		margin-top: 5px;
+	}
+
+	#social ul{
+		padding-top: 5px;
+		text-align: right;
+	}
+	.square{
+		height: 190px;
+	}
+
+	.square h2, .colum h2{
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 31px;
+	}
+
+	.square h2#abre, .colum h2#abre{
+		font-weight: 300;
+		font-size: 50px;
+		line-height: 50px;
+		text-align: center
+	}
+
+	#right{
+		margin-top: 0px;
+	}
+	.colum{
+		height: 490px;
+	}
+	.comit{
+		display: inherit;
+	}
+	.squares{
+		padding-top: 0px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	header, #social, .container{
+		width: 98%;
+		margin: auto;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	#gwb{
+		font-size: 22px;
+		text-align: center;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	
+}
+
+
+
+
+/*
+
+
+
+
+	@media only screen and (min-width: 480px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	.space{
+		margin-top: 5px;
+	}
+ #square{
+ 	height: 120px;
+ }
+	#square h2{	
+	font-size: 20px;
+}
+
+	nav#menu>h1, #menu #nav, #menu li{
+		display: block;
+	}
+
+	#menu #nav{
+		width: 100%;
+		text-align: center;
+		height: 280px;
+		display: none;
+	}
+
+	#menu li{
+		border-bottom: 3px solid #ABD047;
+		padding: 0px;
+		margin: 0px;
+		cursor: pointer;
+	}
+
+	#menu li.active, #menu li:hover{
+		background-color: #ABD047;
+	}
+
+	#menu li.active a, #menu li:hover a{
+			color: #fff;
+		}
+	#social ul{
+		text-align: center;	
+	}
+	
+	#click{
+		float: right;
+		height: 36px;
+		width: 36px;
+		background-image: url('../img/menu.png');
+		background-repeat: no-repeat;
+		margin-top: 15px;
+		margin-right: 5px;
+		cursor:pointer;
+		border: 2px solid #E6E6E6;
+		border-radius: 5px;
+	}
+
+	#menu h1{
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	header, section.container, #social{
+			width:75%;
+		}
+	#menu #nav{
+		display: inline-block;
+	}
+
+	#colum{
+		height: 496px;
+	}
+
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}*/
